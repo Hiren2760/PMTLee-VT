@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_15sdp"
+        android:layout_height="match_parent"
+        tools:context=".ui.orderdetails.OrderDetailsFragment">
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/product_group"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/productGroupTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/product_name"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/productNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/model_number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/modelNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/standard_prodcut_measurement"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/productMeasureET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="textMultiLine" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/standard_price"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/standardPriceET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="textMultiLine" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/any_customiztion"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/deliveryPeriodTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/custome_scafflod_size"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customScafflodET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="textMultiLine" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/custome_plat_height"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customPlatformHeightET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="textMultiLine" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/custom_tower_height"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customTowerHeightET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/custom_working_height"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customWorkingHeightET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/customized_wheel"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customWheelET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/modified_component"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/modifiedComponentET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/modified_apporx_cost"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/modifiedApproxET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+
+
+        <Button
+            android:id="@+id/saveBT"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/m_lato_bold"
+            android:text="@string/save"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifiedApproxTIL" />
+    </LinearLayout>
+</ScrollView>

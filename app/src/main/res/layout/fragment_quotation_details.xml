@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/login_branch" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loginBranchET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/entered_by" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/enteredByET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/entry_date_time" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/enteryDateTimeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:enabled="false"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/shipping_to_customer_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/shippingToCustET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/addressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/country"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/countryET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/state"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/stateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/city"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cityET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/gst_no"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/gstNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/billing_customer_name"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/billingtoCustomerET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/address"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/billingAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/country"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/billingCountryET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/state"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/billingStateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/city"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/billingCityET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/gst_no"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/billingGSTNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/other_ref_no"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherRefNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/dispatch_through"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/dispatchThroughET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/destination"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/destinationET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/billing_type"/>
+         <AutoCompleteTextView
+            android:id="@+id/billing_typeSP"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/m_lato_regular"
+             android:inputType="none"
+             android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+             android:textSize="@dimen/_6ssp"
+           />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/rate_type"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/rateTypeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginBottom="@dimen/_20sdp"
+            >
+
+
+            <Button
+                android:id="@+id/newQuotationBT"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/new_quotation"
+                android:textSize="@dimen/_6ssp"
+                android:layout_gravity="center_vertical"
+
+                android:backgroundTint="@color/colorPrimary"
+             />
+
+            <Button
+                android:id="@+id/revised_quotationBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/revised_quotation"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/findBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/find"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/modifyBT"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/modify"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/colorPrimary"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/clearBT"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/clear"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/colorPrimary"
+                android:textSize="@dimen/_6ssp"
+               />
+        </LinearLayout>
+       </LinearLayout>
+
+</ScrollView>

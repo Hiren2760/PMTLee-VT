@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        tools:context=".ui.orderdetails.OrderDetailsFragment">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/transportation"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/transportationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/payment_terms"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/paymentTermET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/delivery_period"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/deliveryPeriodTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/delivery_yard"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/deliveryYardTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/type_of_wheel"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/typeWheelET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/packing_insurance"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/packingInsuranceET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/loading_unloading"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loadingUnloadingET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/gst"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/gstTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/material_amount"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/materialAmountET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/total_tax_amount"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/totalTaxET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/grand_total"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/grandTotalET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:hint="Type Here"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/saveBT"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/m_lato_bold"
+            android:text="@string/save"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grandTotalTIL" />
+    </LinearLayout>
+</ScrollView>

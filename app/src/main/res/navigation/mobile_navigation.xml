@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.pg.crm.ui.main.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_materialInwardFragment"
+            app:destination="@id/materialInwardFragment" />
+
+
+        <action
+            android:id="@+id/action_nav_home_to_weightmentFragment"
+            app:destination="@+id/weightmentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_batchScheduleFragment"
+            app:destination="@+id/batchScheduleFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_hardeningProcessFragment"
+            app:destination="@+id/hardeningProcessFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_tpBatchSchFragment"
+            app:destination="@id/navigation2" />
+        <action
+            android:id="@+id/action_nav_home_to_temperingProcessFragment"
+            app:destination="@+id/temperingProcessFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_customerwiseitemratedetailsFragment"
+            app:destination="@+id/customerwiseitemratedetailsFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_hardeningProcessVacuumFragment"
+            app:destination="@+id/hardeningProcessVacuumFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/hardeningProcessVacuumFragment"
+        android:name="com.pg.crm.ui.hardeningVacuum.HardeningVacuumFragment"
+        android:label="@string/hardening_process_vaccum"
+        tools:layout="@layout/fragment_hardening_vacuum">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/hardeningProcessFragment"
+        android:name="com.pg.crm.ui.hardening.HardeningProcessFragment"
+        android:label="@string/hardening_process_vaccum"
+        tools:layout="@layout/fragment_hardening_vacuum">
+
+    </fragment>
+    <fragment
+        android:id="@+id/materialInwardFragment"
+        android:name="com.pg.crm.ui.materialInward.MaterialInwardFragment"
+        android:label="@string/material_inward"
+        tools:layout="@layout/fragment_material_inward">
+
+    </fragment>
+    <fragment
+        android:id="@+id/weightmentFragment"
+        android:name="com.pg.crm.ui.weighment.WeightmentFragment"
+        android:label="@string/weighment"
+        tools:layout="@layout/fragment_weightment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/batchScheduleFragment"
+        android:name="com.pg.crm.ui.batchSchedule.BatchScheduleFragment"
+        android:label="@string/batch_schedule"
+        tools:layout="@layout/fragment_batch_schedule">
+
+    </fragment>
+  <!--  <fragment
+        android:id="@+id/hardeningProcessFragment"
+        android:name="com.pg.crm.ui.hardening.HardeningProcessFragment"
+        android:label="@string/hardening_process"
+        tools:layout="@layout/fragment_hardening_process">
+
+    </fragment>-->
+
+    <fragment
+        android:id="@+id/temperingProcessFragment"
+        android:name="com.pg.crm.ui.temperingprocess.TemperingProcessFragment"
+        android:label="@string/tampering_process"
+        tools:layout="@layout/fragment_tempering_process">
+
+    </fragment>
+    <fragment
+        android:id="@+id/customerwiseitemratedetailsFragment"
+        android:name="com.pg.crm.ui.customerwiseitemandratedetils.CustomerWiseItemAndRateDetilsFragment"
+        android:label="@string/customer_wise_item_rate_details"
+        tools:layout="@layout/fragment_customer_wise_item_rate_details">
+
+    </fragment>
+    <navigation
+        android:id="@+id/navigation2"
+        app:startDestination="@id/navigation">
+        <navigation
+            android:id="@+id/navigation"
+            app:startDestination="@id/tpBatchSchFragment">
+            <fragment
+                android:id="@+id/tpBatchSchFragment"
+                android:name="com.pg.crm.ui.tpbatchsch.TPBatchSchFragment"
+                android:label="@string/tp_batch_sch"
+                tools:layout="@layout/fragment_t_p_batch_sch">
+
+            </fragment>
+        </navigation>
+    </navigation>
+
+</navigation>

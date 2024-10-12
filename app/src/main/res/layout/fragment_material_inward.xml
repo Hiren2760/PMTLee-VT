@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="materialInwardViewModel"
+            type="com.pg.crm.ui.materialInward.MaterialInwardViewModel" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:id="@+id/ly_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="Location"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/locationACT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:fontFamily="@font/m_lato_regular"
+                        android:inputType="none"
+                        android:maxLength="30"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/entered_by"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/enteredByET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint=" "
+                        android:inputType="text"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.7"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="Entry Date &amp; Time"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/datetimeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="text"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.8"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="IGP No"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/igpNoET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="text"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/App_TextViewLableStyle_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Customer Name"
+
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/customerNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:fontFamily="@font/m_lato_regular"
+                android:hint=""
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/App_TextViewLableStyle_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Place"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/placeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="DC Date"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/dcDateET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="none"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="DC No"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/dcNoET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:inputType="text"
+
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="Vehicle No"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/vehicleNoET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:inputType="text"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/App_TextViewLableStyle_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="Driver Name"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/driverNameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint=""
+                        android:inputType="text"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/App_TextViewLableStyle_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Material Type"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/materialTypeAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:fontFamily="@font/m_lato_regular"
+                android:inputType="none"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/App_TextViewLableStyle_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Material Details"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/materialDatailsET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/App_TextViewLableStyle_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/remarks"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/remarkET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <Button
+                    android:id="@+id/newBT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".9"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/m_lato_bold"
+                    android:text="New"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp" />
+
+                <Button
+                    android:id="@+id/saveBT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/button_fade"
+                    android:enabled="false"
+                    android:fontFamily="@font/m_lato_bold"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp" />
+
+                <Button
+                    android:id="@+id/findBT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/m_lato_bold"
+                    android:text="@string/find"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp" />
+
+                <Button
+                    android:id="@+id/modifyBT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1.1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/m_lato_bold"
+                    android:text="@string/modify"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp" />
+
+                <Button
+                    android:id="@+id/clearBT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/m_lato_bold"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

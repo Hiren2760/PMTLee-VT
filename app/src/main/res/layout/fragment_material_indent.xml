@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Indent Date" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/indentDateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Indent By" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/indentByET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Indent No" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/indentNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Unit/Area" />
+
+        <AutoCompleteTextView
+            android:id="@+id/unitArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Request To" />
+
+        <AutoCompleteTextView
+            android:id="@+id/requestto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Material Group" />
+
+        <AutoCompleteTextView
+            android:id="@+id/materialGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Material Name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/materialName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="UOM" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/uomET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Current Quantity" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/currentQuantityET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Required Date" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/requiredDateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Remarks" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/remarksET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/machine_detail_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Indent Material Details:"
+                android:textColor="@color/border_grey"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7F7F7"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Sl. No"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Material Group"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Material Name"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Required Qty"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Required Date"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Remarks"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/machine_detail_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fillViewport="true"
+                android:gravity="center"
+                android:nestedScrollingEnabled="false"
+                android:verticalSpacing="1dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <Button
+                android:id="@+id/newIndentBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="New Indent"
+
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/saveBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/save"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/findBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/find"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/modifyBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/modify"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/clearBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/clear"
+                android:textSize="@dimen/_6ssp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

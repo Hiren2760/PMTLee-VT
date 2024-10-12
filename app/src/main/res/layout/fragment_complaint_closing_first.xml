@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Branch/Location" />
+
+        <AutoCompleteTextView
+            android:id="@+id/branchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/entry_date_time" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/entryDateTimeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/entered_by" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/entryByET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Work Assigned to Engineer/Executive" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/workassignEnginnerET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Complaint Closing Date &amp; Time" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/complaintClosingDateTimeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Company Name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/comanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Place" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/placeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Contact Person" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactPersonET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Contact Details" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactDetailsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Actual No. of KMS" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/actualNumberofKMET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Customer Feedback Mail id"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customerFeedbackmailidET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Remarks" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/remarksET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Response Time" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/responseTimeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Down Time" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/downTimeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/machine_detail_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Machine Details:"
+                android:textColor="@color/border_grey"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7F7F7"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Complaint Date/ No"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Customer Name"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Model &amp; Serial No."
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Meter Reading"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Select"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/machine_detail_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fillViewport="true"
+                android:gravity="center"
+                android:nestedScrollingEnabled="false"
+                android:verticalSpacing="1dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <Button
+                android:id="@+id/closingComplaintsBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="Closing Complaint"
+
+                android:textSize="@dimen/_6ssp" />
+
+
+
+            <Button
+                android:id="@+id/findBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/find"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/modifyBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/modify"
+                android:textSize="@dimen/_6ssp" />
+            <Button
+                android:id="@+id/printDocumentBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="Print Documents"
+                android:textSize="@dimen/_6ssp" />
+            <Button
+                android:id="@+id/clearBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/clear"
+                android:textSize="@dimen/_6ssp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

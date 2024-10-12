@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ly_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/button_fade"
+    android:padding="5dp"
+    android:weightSum="7">
+
+    <TextView
+        android:id="@+id/serialNumberTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:fontFamily="@font/m_lato_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7sdp" />
+
+
+    <TextView
+        android:id="@+id/dateTimeTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:fontFamily="@font/m_lato_regular"
+        android:gravity="center"
+        android:text="Date &amp; Time"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7sdp" />
+
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:fontFamily="@font/m_lato_regular"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:text="Customer Name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7sdp" />
+
+
+
+    <TextView
+        android:id="@+id/materialDetailsTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:fontFamily="@font/m_lato_regular"
+        android:gravity="center"
+        android:text="Material/Details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7sdp" />
+
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Quantity/Kgs"
+        android:fontFamily="@font/m_lato_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7sdp" />
+
+
+    <TextView
+        android:id="@+id/process_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Processname"
+        android:fontFamily="@font/m_lato_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7sdp" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/selectedCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@null"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

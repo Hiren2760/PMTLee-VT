@@ -1,0 +1,155 @@
+<resources>
+    <!--    <string name="app_name">PMTLee VT</string>-->
+    <string name="no_internet">No Internet Available!</string>
+    <string name="no_records">No Records Found!</string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Please enter username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">"Welcome"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">Home</string>
+    <string name="quotation_details">Quotation Details</string>
+    <string name="dashBoard">DashBoard</string>
+
+    <string name="material_inward">Material Inward</string>
+    <string name="weighment">Weighment</string>
+    <string name="batch_schedule">Hardening Batch Sch.</string>
+    <string name="hardening_process">Hardening Process</string>
+    <string name="hardening_process_vaccum">Hardening Process (Vacuum)</string>
+    <string name="tp_batch_sch">Tempering Batch Sch.</string>
+    <string name="tampering_process">Tempering Process(Vacuum)</string>
+    <string name="annealing_process">Annealing Process</string>
+    <string name="short_blasting">Shot Blasting</string>
+    <string name="band_sawing">Band Sawing</string>
+    <string name="cnc_process">CNC Process</string>
+    <string name="induction_process">Induction Process</string>
+    <string name="stocking_despatch">Stocking &amp; Despatch</string>
+    <string name="material_outward">Material Outward</string>
+    <string name="customer_wise_item_rate_details">Customer Wise Item &amp; Rate Details</string>
+
+
+    <string name="sales_quotation">Sales Quotation</string>
+    <string name="sales_enquiry">Sales Enquiry</string>
+    <string name="sales_order">Sales Order</string>
+    <string name="payment_receipt">Payment Receipt</string>
+    <string name="complaints_raising">Complaints Raising</string>
+    <string name="complaints_closing">Complaints Closing</string>
+    <string name="material_indent">Material Indent</string>
+    <string name="material_consumed">Material Consumed</string>
+    <string name="stock_details">Stock Details</string>
+    <string name="daily_expenese">Daily Expenses</string>
+    <string name="sales_report">Sales Report</string>
+    <string name="notifications">Notifications</string>
+    <string name="installation_execution">Installation &amp; Execution</string>
+
+    <string name="login_branch">Login Branch</string>
+    <string name="entered_by">Entered By</string>
+    <string name="entry_date_time">Entry Date &amp; Time</string>
+    <string name="shipping_to_customer_name">Shipping To:Customer Name</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="gst_no">GST No.</string>
+    <string name="billing_customer_name">Billing To: Customer Name</string>
+    <string name="other_ref_no">Other Ref. No</string>
+    <string name="dispatch_through">Dispatch Through</string>
+    <string name="destination">Destination</string>
+    <string name="billing_type">Billing Type</string>
+    <string name="rate_type">Rate Type</string>
+
+    <string name="new_quotation">New Quotation</string>
+    <string name="revised_quotation">Revised Quotation</string>
+    <string name="find">Find</string>
+    <string name="modify">Modify</string>
+    <string name="clear">Clear</string>
+
+    <string name="mode_of_payment">Mode/Terms of Payment</string>
+    <string name="transportation">Transportation</string>
+    <string name="payment_terms">Payment Terms</string>
+    <string name="delivery_period">Delivery Period</string>
+    <string name="delivery_yard">Delivery Yard</string>
+    <string name="type_of_wheel">Type of Wheel</string>
+    <string name="packing_insurance">Packing &amp; Insurance </string>
+    <string name="loading_unloading">Loading &amp; Unloading</string>
+    <string name="gst">GST</string>
+    <string name="material_amount">Material Amount</string>
+    <string name="total_tax_amount">Total Tax Amount</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="save">Save</string>
+
+    <string name="product_detail">Product Details</string>
+    <string name="product_group">Product Group</string>
+    <string name="product_name">Product Name</string>
+    <string name="model_number">Model No</string>
+    <string name="standard_prodcut_measurement">Standard Product Measurements</string>
+    <string name="standard_price">Standard Price</string>
+    <string name="any_customiztion">Any Customization</string>
+    <string name="custome_scafflod_size">Customized Scaffold Size</string>
+    <string name="custome_plat_height">Customized Plat form Height</string>
+    <string name="custom_tower_height">Customized Tower Height</string>
+    <string name="custom_working_height">Customized Working Height</string>
+    <string name="customized_wheel">Customized Wheels </string>
+    <string name="modified_component">Modified Components Nos.</string>
+    <string name="modified_apporx_cost">Modified Approx. Material Cost</string>
+
+    <string name="validation_location">Please choose Location</string>
+    <string name="validation_customername">Please enter Customer Name</string>
+    <string name="validation_place">Please enter place</string>
+    <string name="validation_dcno">Please enter DC No</string>
+    <string name="validation_vehicleno">Please enter Vehicle No</string>
+    <string name="validation_drivername">Please enter Driver Name</string>
+    <string name="validation_materialdetail">Please enter Material Details</string>
+    <string name="validation_remarks">Please enter Remarks</string>
+
+    <string name="location">Location</string>
+    <string name="call_by">Call By</string>
+    <string name="register_no">Register No.</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="service_product">Service/Product</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="call_details">Call Details</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="mail_id">Mail ID</string>
+    <string name="call_status">Call Status</string>
+    <string name="next_call_meeting">Next Call/Meeting</string>
+    <string name="next_call_by">Next Call by</string>
+    <string name="remarks">Remarks</string>
+    <string name="approx_business_value">Approx. Business Value</string>
+    <string name="new_call_enquiry">New Call/Enquiry</string>
+
+    <string name="machine_group">Machine Group</string>
+    <string name="machine_make_model">Machine Make &amp; Model</string>
+    <string name="printer_copier">Printer/Copier</string>
+    <string name="mono_color">Mono Color</string>
+    <string name="enquiry_details">Enquiry Details</string>
+    <string name="material_inward_save_successfully">Material Inward Save Successfully</string>
+    <string name="status">Status</string>
+    <string name="processing_shift">Processing Shift</string>
+    <string name="helpers">Helpers</string>
+    <string name="change_over_shift">Change Over Shift</string>
+    <string name="shift_engg">Shift Engg.</string>
+    <string name="cycle_running_in">Cycle Running In</string>
+    <string name="full_load_heating_r_y_b">Full Load Heating (R/Y/B)</string>
+    <string name="full_load_cooling_r_y_b">Full Load Cooling(R/Y/B)</string>
+    <string name="pending_batches_details">Pending Batches Details</string>
+    <string name="program_no">Program No</string>
+    <string name="tp_new">TP New</string>
+    <string name="shift_change">Shift Change</string>
+    <string-array name="billing_type">
+        <item>Rental</item>
+        <item>Sale</item>
+    </string-array>
+</resources>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/location" />
+
+        <AutoCompleteTextView
+            android:id="@+id/locationInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/call_by" />
+
+        <AutoCompleteTextView
+            android:id="@+id/callby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/register_no" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/registerNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/date_time" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/datetimeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/service_product" />
+
+        <AutoCompleteTextView
+            android:id="@+id/serviceProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/customer_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customerNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/country" />
+
+        <AutoCompleteTextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/state" />
+
+        <AutoCompleteTextView
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/city" />
+
+        <AutoCompleteTextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/addressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/call_details" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/calldetailsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/contact_person" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactPersonET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/contact_number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/mail_id" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mailIDET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/call_status" />
+
+        <AutoCompleteTextView
+            android:id="@+id/callStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/next_call_meeting" />
+
+        <AutoCompleteTextView
+            android:id="@+id/nextCallMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/next_call_by" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/callMeetingbyET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/remarks" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/remarkET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/approx_business_value" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/businessValueET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <Button
+                android:id="@+id/callNewEnquiryBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/new_call_enquiry"
+
+                android:textSize="@dimen/_6ssp" />
+
+
+
+            <Button
+                android:id="@+id/findBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/find"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/modifyBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/modify"
+                android:textSize="@dimen/_6ssp" />
+
+            <Button
+                android:id="@+id/clearBT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/m_lato_bold"
+                android:text="@string/clear"
+                android:textSize="@dimen/_6ssp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

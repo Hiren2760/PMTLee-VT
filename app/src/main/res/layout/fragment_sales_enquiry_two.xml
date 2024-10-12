@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/machine_group" />
+
+        <AutoCompleteTextView
+            android:id="@+id/machineGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/machine_make_model" />
+
+        <AutoCompleteTextView
+            android:id="@+id/machineMakeModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/printer_copier" />
+
+        <AutoCompleteTextView
+            android:id="@+id/printerCopier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/mono_color" />
+
+        <AutoCompleteTextView
+            android:id="@+id/monoColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:fontFamily="@font/m_lato_regular"
+            android:inputType="none"
+            android:textSize="@dimen/_6ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="No. of Machines" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/noofMachineET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Monthly Fixed Rental" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/monthlyFixedRentalET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Photo Copies - Monthly Free" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/photocopyMonthlyFreeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Photo Copies - Rate/Page"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/photoCopyRatePageET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Print Per Copy(Mono) A3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/printCopyMonoA3ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Print Per Copy(Mono) A4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/printCopyMonoA4ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Print Per Copy(Color) A3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/printCopyColorA3ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App_TextViewLableStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Print Per Copy(Color) A4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/printCopyColorA4ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Here"
+            android:inputType="text"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/material_issue_detail_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Service Details:"
+                android:textColor="@color/border_grey"
+                android:textSize="@dimen/_8sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7F7F7"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="7">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Sl. No"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Machine Group/Make/Printer/M-C"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:text="Nos."
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Monthly Fixed Rental"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="PC Free &amp; Rate"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Print C/Rate (Mono-A3/A4)"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Print C/Rate (Color-A3/A4)"
+                    android:textColor="@color/border_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/material_detail_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fillViewport="true"
+                android:gravity="center"
+                android:nestedScrollingEnabled="false"
+                android:verticalSpacing="1dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/saveBT"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/m_lato_bold"
+            android:text="@string/save"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

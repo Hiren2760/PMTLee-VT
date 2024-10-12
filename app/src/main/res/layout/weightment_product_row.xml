@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/llMain"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/serialNumberTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="Sl. No"
+        android:fontFamily="@font/m_lato_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/productCodeTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/m_lato_regular"
+        android:gravity="center"
+        android:text="Product Group/Name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/qty_containerTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:fontFamily="@font/m_lato_regular"
+        android:text="Qty(Nos.)/Containers(Nos.)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/grosswtTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:fontFamily="@font/m_lato_regular"
+        android:text="Gross Weight"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/totalWtTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Total Weight"
+
+        android:fontFamily="@font/m_lato_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp" />
+
+    <View
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/netwtTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:fontFamily="@font/m_lato_regular"
+        android:text="Net Mat. Weight"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp" />
+
+
+</LinearLayout>
